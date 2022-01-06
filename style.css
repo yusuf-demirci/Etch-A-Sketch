@@ -1,0 +1,114 @@
+body {
+    padding: 0;
+    text-align: center;
+    background-color: #F0ECE3;
+}
+h1 {
+    font-size: 80px;
+    margin: 3%;
+}
+.main {
+    margin: auto;
+    display: grid;
+    gap: 10%;
+    justify-content: center;
+}
+.control {
+    grid-column: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 200px;
+}
+
+.container {
+    margin: auto;
+    width: 480px;
+    height: 480px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-column: 2;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.pixels {
+    
+    width: 101%;
+    height: 101%;
+}
+
+.pixel-label {
+    padding: 10px;
+    display: block;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    background-color: #F0ECE3;
+  }
+  
+input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: #FFFFFF;
+}
+  
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    margin-top: -8px;
+    background: black;
+}
+button, label {
+    padding: 10%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.25em);
+}
+#color-picker {
+    width: auto;
+}
+.active {
+    background-color: #000000;
+    color: #FFFFFF
+}
+footer {
+    margin: 3% auto 2%;
+    font-size: 20px;
+}
+
+@media (max-width: 800px){
+    .control {
+        width: 150px
+    }
+    .container {
+        width: 360px;
+        height: 360px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    footer {
+        font-size: 15px;
+    }
+}
+@media (max-width: 600px){
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
