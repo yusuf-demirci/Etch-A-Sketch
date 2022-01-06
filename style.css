@@ -22,7 +22,6 @@ h1 {
     align-items: stretch;
     width: 200px;
 }
-
 .container {
     margin: auto;
     width: 480px;
@@ -35,30 +34,24 @@ h1 {
     background-color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
 .pixels {
-    
     width: 101%;
     height: 101%;
 }
-
 .pixel-label {
     padding: 10px;
     display: block;
 }
-
 input[type='range'] {
     -webkit-appearance: none;
     background-color: #F0ECE3;
   }
-  
 input[type='range']::-webkit-slider-runnable-track {
     height: 10px;
     border: 1px solid black;
     border-radius: 25px;
     background: #FFFFFF;
 }
-  
 input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 24px;
